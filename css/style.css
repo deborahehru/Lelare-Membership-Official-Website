@@ -1,0 +1,107 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url(../bg.png);
+        height:100vh;
+        width: 100vw;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+padding-top: 2em;
+margin: 0;
+
+}
+ul p{
+    padding-right: 3em;
+    float: left;
+padding: left 0; 
+margin: 0;
+}
+
+li a{
+float: right;
+text-decoration: none;
+color:black;
+
+}
+a :hover{
+    color: rgb(170, 32, 173);
+    
+}
+
+h1{
+text-align: center;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 28px;
+color: white;
+padding-top: 8em;
+padding-bottom: 2em;
+
+}
+.btn{
+    /* text-align: center;
+    justify-content: center;
+    margin-left: 36%; */
+    color: white;
+    background-color: rgb(170, 32, 173);
+    outline-color: none;
+
+
+}
+.btn-2{
+    color: rgb(170, 32, 173);
+    background-color: white;
+
+
+}
+h2{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.card{
+    margin-bottom:5px;
+   
+}
+.sponsors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+section{
+    padding-bottom: 2em;
+    padding-top: 2em;
+
+}
+footer{
+    display: flex;
+    flex-direction: row;
+}
+.copyright{
+    text-align: center;
+    padding: 2em;
+
+}
+img.card {
+    height: 12rem;
+display: flex;
+flex-direction: row;
+}
