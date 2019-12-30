@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/alert.js"></script>
 </head>
 
 <body>
@@ -123,35 +124,35 @@
             <div class="row">
                 <div class="col-8 offset-2">
                     <section class="join-us">
-                        <form>
+                        <form name="lelareForm" method="post" onsubmit="return lelareValidate()">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Full Name</label>
-                                <input type="text" class="form-control" id="exampleInputFullname"
+                                <label for="name">Full Name</label>
+                                <input type="name" class="form-control" name="name" id="Fullname"
                                     aria-describedby="emailHelp" placeholder="Enter Fullname">
 
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="Email"
                                     aria-describedby="emailHelp" placeholder="Enter email">
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with
                                     anyone else.</small>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" id="Password"
                                     placeholder="Password">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Confirm Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                <label for="password">Confirm Password</label>
+                                <input type="password" class="form-control" name="newpassword" id="newpassword"
                                     placeholder="Confirm Password">
                             </div>
                             <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">I agree to <a href="">Terms and
+                                <input type="checkbox" class="form-check-input" id="Check">
+                                <label class="form-check-label" for="Check ">I agree to <a href="">Terms and
                                         Conditions</a> and <a href="">Privacy Policy</a>
-                                    </label>
+                                </label>
                             </div>
 
                             <button type="submit" class="btn btn-lg">Submit</button>
@@ -166,7 +167,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-3">
+                <div class="col-sm-12 col-lg-3">
                     <h4>About us</h4>
                     <p>
                         Legendary Ladies Recruit (LeLARe) is a registered non-profit social organization giving
@@ -179,7 +180,7 @@
 
                     </p>
                 </div>
-                <div class="col-3">
+                <div class="col-sm-12 col-lg-3">
                     <p> With our vast network of mentors, partners and resources, we set young women in motion to
                         achieve their career aspirations, find and fulfil purpose, while supporting one another to
                         replicate the success.
@@ -188,12 +189,12 @@
                         post-graduate levels to career fulfilment, and extended its mentorship programmes to 500
                         other high-school girls.</p>
                 </div>
-                <div class="col-3">
+                <div class="col-sm-12 col-lg-3">
                     <h4>Mission</h4>
                     <p>Our mission is to provide a diverse platform that grooms young African women through
                         mentorship and resourceful programmes to crush their day-to-day barriers. </p>
                 </div>
-                <div class="col-3">
+                <div class="col-sm-12 col-lg-3">
                     <h4>Vision</h4>
                     <p>Our vision is to see young African women liberated, get more deeply rooted and represented
                         across high-end carrers and empower millions to champion a new wave of the African future
@@ -207,7 +208,7 @@
 
     <div class="row">
         <div class="container">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="col-12">
 
                 <div class="copyright">
                     <p>
@@ -217,6 +218,9 @@
             </div>
         </div>
     </div>
+
+
+
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
